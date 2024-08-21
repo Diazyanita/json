@@ -38,10 +38,10 @@ if __name__ == "__main__":
     
     # menulis data awal
     data_utama = {
-        "Nama": "diaz yanita",
-        "umur": 18,
-        "sekolah": "SMKN 9 MALANG",
-        "Alamat": "kapi suwida no11"
+        "nama_film_animasi": "Kungfu Panda",
+        "genre": "Komedi,animasi,petualangan",
+        "asal_negara": "USA",
+        "Sutradara": "John Stevenson,Mark Osborne"
     }
     json_file.tulis(data_utama)
 
@@ -50,11 +50,11 @@ if __name__ == "__main__":
     print(json_file.baca())
 
     # update file
-    json_file.update("umur", 20)  # Mengubah umur menjadi 20
+    json_file.update("nama_film_animasi", "insideOUT")  # Mengubah umur menjadi 20
     print("\nData After di update:")
     print(json_file.baca())
 
     # delete 
-    json_file.delete("Alamat")
+    json_file.delete("asal_negara")
     print("\nData After di delete:")
     print(json_file.baca())
